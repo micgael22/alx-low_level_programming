@@ -8,14 +8,16 @@
 
 int main(void)
 {
-	char c = '0';
+	char low, e, q;
 
-       while (c <= '0')
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'; low <= 'z'; low++)
 	{
-		puthchar(c);
-		c++;
+	if (low != e && low != q)
+	putchar(low);
 	}
-
 	putchar('\n');
 	return (0);
 }
