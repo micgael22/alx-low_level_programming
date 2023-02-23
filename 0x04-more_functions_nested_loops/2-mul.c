@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * mul - Multiples two integers
- * @x: The first numberof multiply with first number
- * @y: The second number to multiply with first number
- * Return: The result of multiplication between x param and y param
+ * _isdigit - Check if a character is a digit
+ * @x: The number to be checked
+ * Return: 1 for a character that will be a digit or 0 for any else
  */
 
-int mult(int x, int y)
+int _isdigit(int x)
 {
-	return(x * y);
+	if (x >= 48 && x <=57)
+	{
+	return (1);
+	}
+	return (0);
 }
